@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
-void main() => runApp(MyApp());
+void main() => runApp(Contacto());
 
-class MyApp extends StatefulWidget {
+class Contacto extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _ContactoState createState() => _ContactoState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _ContactoState extends State<Contacto> {
   String attachment;
 
   final _recipientController = TextEditingController(

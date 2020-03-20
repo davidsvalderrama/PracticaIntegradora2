@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practica_dos/models/apunte.dart';
+import 'package:photo_view/photo_view.dart';
 
 class ApuntesDetail extends StatefulWidget {
   final Apunte apunte;
@@ -19,19 +20,10 @@ class _ApuntesDetailState extends State<ApuntesDetail> {
       body: Column(
         children: <Widget>[
           Container(
-            color: Colors.grey,
-            margin: EdgeInsets.all(12),
-            child: Row(
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(38, 0, 0, 0),
-                  child: Image.network(
-                    "${widget.apunte.imageUrl}",
-                    width: 300,
-                    height: 280,
-                  ),
-                ),
-              ],
+            width: 400,
+            height: 300,
+            child: PhotoView(imageProvider: NetworkImage("${widget.apunte.imageUrl}"
+            ),
             ),
           ),
           Padding(

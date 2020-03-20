@@ -103,7 +103,7 @@ class About extends StatelessWidget {
               color: Theme.of(context).accentColor,
               onPressed: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-                          return MyApp();
+                          return Contacto();
                         }));
               },
               height: 50,
