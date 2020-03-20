@@ -52,11 +52,6 @@ class _AddApunteState extends State<AddApunte> {
           },
           child: BlocBuilder<BlocApunteBloc, BlocApunteState>(
             builder: (context, state) {
-              if (state is BlocApunteInitial) {
-                return Center(
-                  child: CircularProgressIndicator(),
-                );
-              }
               if (state is EscogerImagen) {
                 _choosenImage = state.imgtmp;
               }
